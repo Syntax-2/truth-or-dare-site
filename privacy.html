@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn Before Privacy Policy</title>
+  <style>
+    body {
+      color: #1f2937;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px 20px;
+    }
+    main {
+      margin: 0 auto;
+      max-width: 760px;
+    }
+    h1, h2 {
+      color: #111827;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    .updated {
+      color: #4b5563;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Learn Before Privacy Policy</h1>
+    <p class="updated">Last updated: October 7, 2026</p>
+
+    <p>Learn Before is developed by Syntax-2. Contact: <a href="mailto:sakkkata@gmail.com">sakkkata@gmail.com</a>.</p>
+
+    <h2>Summary</h2>
+    <p>Learn Before is a local-first Android application. Core learning and app-blocking data stays on the device. When enabled in Settings, Firebase Analytics receives limited product analytics and Firebase Crashlytics receives diagnostic reports. Firebase Remote Config receives technical request metadata to deliver current product configuration. Optional referrals and weekly challenges use Firebase Anonymous Authentication, Firestore, and Cloud Functions. A weekly challenge syncs only the participant question totals needed to show shared progress. Free users may see banner ads in Practice and app-blocking quizzes; premium users do not.</p>
+
+    <h2>Core Data Stored Locally</h2>
+    <p>Learn Before checks locally for installed apps with launcher icons so the user can choose which apps to protect. The app names and icons shown in this chooser are not uploaded. Learn Before also accesses Android app usage events after the user grants Usage Access in Android Settings; this access detects when one of the apps selected by the user becomes active.</p>
+
+    <p>Learn Before also stores local learning data, including selected applications, selected learning category, quiz answers, question progress, basic statistics, unlock settings, and unlock timers. This personal learning data remains on the device; the optional weekly challenge shares only question totals.</p>
+
+    <h2>Firebase Analytics</h2>
+    <p>When the <strong>Analytics &amp; diagnostics</strong> setting is enabled, Firebase Analytics receives limited aggregate product-funnel events and these product state properties: onboarding state, premium status, premium source, and whether protection is enabled. Events describe actions such as permission completion, protection setup, quiz gates, unlocks, paywall views, purchases, referral milestones, and review-prompt eligibility. The app does not send protected-app package names, question text, answers, or app-usage history in these events.</p>
+
+    <h2>Firebase Crashlytics</h2>
+    <p>When the <strong>Analytics &amp; diagnostics</strong> setting is enabled, Firebase Crashlytics receives technical crash and non-fatal diagnostic reports to help us find and fix reliability problems. We do not add custom user identifiers, protected-app package names, question content, answers, or app-usage history to Crashlytics reports.</p>
+
+    <h2>Analytics &amp; Diagnostics Control</h2>
+    <p>You can enable or disable Firebase Analytics and Crashlytics in Learn Before under Settings &gt; Analytics &amp; diagnostics. Collection starts disabled until the app reads this setting. Turning the setting off stops the app from logging further product events and non-fatal diagnostic reports and disables automatic Crashlytics collection for future launches. Referral processing is separate because it is needed to administer the optional referral program.</p>
+
+    <h2>Firebase Remote Config</h2>
+    <p>Learn Before periodically requests current product configuration from Firebase Remote Config. For that request, Firebase Remote Config receives technical metadata such as country code, language code, time zone, platform and OS version, Firebase Android App ID, the app package name, Remote Config SDK version, and a Firebase installation ID. This is used to deliver configuration values such as referral and review thresholds. It is separate from the Analytics &amp; diagnostics control and does not include your protected apps, app-usage history, questions, answers, quiz progress, settings, or personal text.</p>
+
+    <h2>Anonymous Identity And Referrals</h2>
+    <p>Learn Before does not provide a visible account, login, registration, or user-facing cloud profile. To provide the optional referral program, Firebase Anonymous Authentication creates a technical identifier in the background. Firestore and Cloud Functions store an anonymous identifier, referral code, referral/install timestamps, and the minimum setup and successful-unlock milestones required to determine whether an invitation qualifies. These records are used for referral attribution, reward administration, and fraud prevention.</p>
+
+    <h2>Optional Weekly Challenges</h2>
+    <p>If you create or join a weekly challenge, Firebase Anonymous Authentication, Firestore, and Cloud Functions store the invite code, selected shared question goal, start and end times, anonymous participant identifiers, and each participant's question total. This lets both participants see the combined total and each person's contribution. Your friend sees only numeric question totals; names, question text, answers, topics, and personal learning history are not shared. Challenge records remain in Firebase after the seven-day challenge until removed by the developer. Weekly challenge participation is optional.</p>
+
+    <h2>What We Do Not Upload</h2>
+    <p>Learn Before does not upload protected-app names or package names, app-usage history, question text, quiz answers, individual learning history, selected categories, local settings, local statistics, or unlock timers. The only learning information synced for a weekly challenge is the question total that participants choose to share. It does not sell user data.</p>
+
+    <h2>Advertising And Third Parties</h2>
+    <p>Free users may see banner ads in Practice quizzes and in the app-blocking quiz screen. That screen is a Learn Before Activity with a reserved banner area; ads are not placed in system overlay windows. Google Mobile Ads SDK automatically collects and shares the device IP address, ad interactions (such as app launches and taps), app and SDK diagnostic information, and device or account identifiers (including the Android Advertising ID and App Set ID when available) for advertising, analytics, and fraud prevention. Google encrypts this data in transit. Learn Before does not send protected-app names or package names, app-usage history, question text, quiz answers, or personal learning history to the advertising SDK.</p>
+    <p>The Google User Messaging Platform (UMP) SDK refreshes consent information at app launch, displays a consent message when required, and prevents ad requests unless the current consent status allows them. When Google requires a privacy-options entry point, it is available under Settings &gt; Privacy Policy. Referral and weekly challenge features use Firebase services as described above. Learn Before does not sell user data.</p>
+
+    <h2>Retention</h2>
+    <p>Local app data remains on the device until the user resets it in the app settings, clears app data through Android Settings, or uninstalls the app. Referral records are retained in Firebase for fraud prevention and reward administration for the life of the referral program. Weekly challenge records remain in Firebase after completion until removed by the developer.</p>
+
+    <h2>Deletion</h2>
+    <p>Users can remove local Learn Before data by opening Learn Before and choosing Settings, then Reset All Data. Uninstalling Learn Before also removes its application-specific local data.</p>
+
+    <h2>Security</h2>
+    <p>Learn Before keeps learning data on the device. Referral records are protected by Firebase Authentication, App Check, Firestore security rules that deny direct client access, and server-side Cloud Functions. The app disables Android backup for its local application data.</p>
+
+    <h2>Permissions</h2>
+    <p>Usage Access lets Learn Before detect when selected distracting apps are active. Display over other apps lets Learn Before show the learning challenge while protection is enabled. Notification permission lets Learn Before show an ongoing protection notification. Foreground service permissions support the user-started protection service.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may be updated when Learn Before changes. The current policy should always match the behavior of the released application.</p>
+  </main>
+</body>
+</html>
